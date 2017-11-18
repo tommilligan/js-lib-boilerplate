@@ -1,6 +1,6 @@
 {
   "name": "js-lib-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A boilerplate es6 library development with tests, coverage, ci and types.",
   "main": "./lib/index.js",
   "directories": {
