@@ -1,0 +1,38 @@
+{
+  "name": "js-lib-boilerplate",
+  "version": "0.0.1",
+  "description": "A boilerplate es6 library development with tests, coverage, ci and types.",
+  "main": "./lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "type": "yarn flow",
+    "test": "mocha --compilers js:babel-core/register -R spec",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register -R spec test/",
+    "compile": "babel src -d lib",
+    "build": "yarn flow && yarn compile && yarn coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tommilligan/js-lib-boilerplate.git"
+  },
+  "author": "Tom Milligan <code@tommilligan.net>",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "chai": "^4.1.0",
+    "eslint": "^4.11.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "flow-bin": "^0.59.0",
+    "istanbul": "1.0.0-alpha.2",
+    "mocha": "^4.0.1",
+    "mocha-eslint": "^4.0.0"
+  }
+}
