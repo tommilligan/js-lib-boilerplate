@@ -8,13 +8,13 @@
 
 A boilerplate es6 library development with tests, coverage, ci and types.
 
-## Clone
+## Clone (for development)
 
 ```bash
 git clone https://github.com/tommilligan/js-lib-boilerplate#master
 ```
 
-## Usage
+### Usage
 
 The below commands can be run with `yarn run` (or `npm run`).
 
@@ -26,3 +26,9 @@ The below commands can be run with `yarn run` (or `npm run`).
 | Compile from es6 | `compile` |
 | All of the above | `build` |
 
+
+## Install (testing only)
+
+```bash
+yarn add js-lib-boilerplate
+```
