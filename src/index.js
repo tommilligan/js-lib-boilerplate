@@ -1,7 +1,7 @@
 // @flow
 
 class Foo {
-    bar = () => {
+    bar = (): string => {
         return "bar";
     }
 }
