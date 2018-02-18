@@ -11,7 +11,8 @@
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --require babel-core/register -R spec test/",
     "build:compile": "babel src -d lib",
     "build:flow": "flow-copy-source -v src lib",
-    "build": "yarn flow && yarn coverage && yarn build:compile && yarn build:flow"
+    "build": "yarn flow && yarn coverage && yarn build:compile && yarn build:flow",
+    "prepublish": "yarn build:compile"
   },
   "repository": {
     "type": "git",
